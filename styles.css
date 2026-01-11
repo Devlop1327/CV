@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     min-height: 100vh;
 }
 
@@ -20,9 +20,8 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-/* Hero section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     padding: 4rem 2rem;
     text-align: center;
@@ -86,7 +85,7 @@ section:last-child {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #667eea;
+    color: #2c3e50;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -118,7 +117,7 @@ section h2 i {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #667eea;
+    background: #2c3e50;
 }
 
 .timeline-item {
@@ -134,10 +133,10 @@ section h2 i {
     top: 10px;
     width: 20px;
     height: 20px;
-    background: #764ba2;
+    background: #34495e;
     border-radius: 50%;
     border: 3px solid white;
-    box-shadow: 0 0 0 3px #667eea;
+    box-shadow: 0 0 0 3px #2c3e50;
 }
 
 .timeline-item h3 {
@@ -147,7 +146,7 @@ section h2 i {
 }
 
 .company {
-    color: #667eea;
+    color: #34495e;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -164,7 +163,28 @@ section h2 i {
 }
 
 .edu-item p {
-    color: #667eea;
+    color: #34495e;
+}
+
+/* Certifications */
+.certifications ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.certifications li {
+    background: #f9f9f9;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.certifications li:hover {
+    transform: translateX(5px);
 }
 
 /* Skills */
@@ -177,7 +197,7 @@ section h2 i {
 }
 
 .skill {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
     padding: 1rem;
     border-radius: 10px;
@@ -187,6 +207,29 @@ section h2 i {
 }
 
 .skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Hobbies */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hobby {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.hobby:hover {
     transform: translateY(-5px);
 }
 
@@ -200,7 +243,7 @@ section h2 i {
 }
 
 .contact i {
-    color: #667eea;
+    color: #2c3e50;
     width: 20px;
 }
 
