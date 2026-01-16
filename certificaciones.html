@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificaciones - Alexis Hinojosa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="container certifications-page">
+        <header class="cert-header">
+            <a href="index.html" class="back-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Volver</a>
+            <h1>Certificaciones</h1>
+            <p class="lead">Presentación de certificados oficiales obtenidos y cursos completados.</p>
+        </header>
+
+        <main>
+            <section class="cert-grid">
+                <article class="cert-card">
+                    <img src="Certificados/cisco.jpeg" alt="Cisco Networking Pro"/>
+                    <h3>Cisco Networking Pro</h3>
+                    <p>Curso de redes y fundamentos de infraestructura (AulaCerti).</p>
+                </article>
+
+                <article class="cert-card">
+                    <img src="Certificados/Ia.jpeg" alt="Introducción a la IA"/>
+                    <h3>Introducción a la Inteligencia Artificial</h3>
+                    <p>Curso introductorio provisto por Microsoft sobre conceptos de IA.</p>
+                </article>
+
+                <article class="cert-card">
+                    <img src="Certificados/Ciber.jpeg" alt="Técnico Básico en Ciberseguridad"/>
+                    <h3>Técnico Básico en Ciberseguridad</h3>
+                    <p>Formación práctica en seguridad informática y buenas prácticas.</p>
+                </article>
+
+                <article class="cert-card">
+                    <img src="Certificados/Iso27.jpeg" alt="ISO27001"/>
+                    <h3>Implementer ISO27001</h3>
+                    <p>Curso sobre implementación y gestión de seguridad de la información.</p>
+                </article>
+
+                <article class="cert-card">
+                    <img src="Certificados/Certjoin.jpeg" alt="Seguridad Cero"/>
+                    <h3>Seguridad de la Información</h3>
+                    <p>Certificado de Seguridad Cero en buenas prácticas de protección de datos.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="cert-footer">
+        </footer>
+    </div>
+
+    <!-- Modal para ver certificados -->
+    <div id="cert-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <img src="" alt="" class="modal-img">
+            <div class="modal-desc">
+                <h3 class="modal-title"></h3>
+                <p class="modal-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

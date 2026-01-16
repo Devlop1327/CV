@@ -298,3 +298,179 @@ section h2 i {
 .fade-in {
     animation: fadeInUp 1s ease-out;
 }
+
+/* Button and certifications page styles */
+.hero-actions {
+    margin-top: 1.5rem;
+}
+
+.btn-cert {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.12);
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.certifications-page {
+    padding-top: 2rem;
+}
+
+.cert-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    color: #2c3e50;
+    background: white;
+    padding: .5rem .9rem;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(44,62,80,0.08);
+    border: 1px solid rgba(44,62,80,0.06);
+    font-weight: 700;
+}
+
+.back-btn svg { color: #2c3e50; }
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+.cert-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 24px rgba(44,62,80,0.06);
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cert-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+    background: #f6f7fb;
+}
+
+.cert-card h3 { color: #2c3e50; margin-bottom: .4rem; }
+.cert-card p { color: #556; font-size: .95rem; }
+
+.cert-card:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(44,62,80,0.12); }
+
+/* Modal styles */
+.modal { display: none; }
+.modal[aria-hidden="false"] { display: block; position: fixed; inset: 0; z-index: 1200; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(12,18,25,0.6); backdrop-filter: blur(2px); }
+.modal-content {
+    position: relative;
+    width: min(900px, 92%);
+    max-height: 90vh;
+    margin: 4vh auto;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem 1.2rem 1.6rem 1.2rem;
+    box-shadow: 0 30px 80px rgba(12,18,25,0.3);
+    overflow: auto;
+}
+.modal-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #2c3e50;
+}
+.modal-img { width: 100%; height: auto; border-radius: 8px; margin-bottom: .8rem; }
+.modal-desc { padding: .2rem .4rem; }
+.modal-title { color: #2c3e50; margin-bottom: .4rem; }
+.modal-text { color: #333; }
+
+
+.btn-cert:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.certifications-page {
+    padding: 2rem 2rem 4rem;
+}
+
+.cert-header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.cert-header .back-link {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f7f7f7;
+    padding: 8px;
+}
+
+.cert-card h3 {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.cert-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
